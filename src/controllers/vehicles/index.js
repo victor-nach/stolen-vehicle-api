@@ -21,4 +21,11 @@ export const getStolenVehicles = async (req, res) => {
   }
 };
 
-export const createStolenVehicles = (req, res) => {};
+export const createStolenVehicles = async (req, res) => {
+  try {
+    const data = await StolenVehicles.createStolenVehicle(req.body);
+    return response(res, 200, data);
+  } catch (error) {
+    return responseErr(res, 500, 'Service Temporarily Down, please try again later');
+  }
+};
