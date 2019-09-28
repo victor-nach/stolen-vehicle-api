@@ -1,9 +1,22 @@
 import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
 import routes from './routes';
 import { responseShort, responseErr } from './utils/responseMsg';
 
 const app = express();
 const PORT = 3000 || process.env.PORT;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+const corsOptions = {
+  origin: '*',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
+app.use(cors(corsOptions));
 
 app.use('/', routes);
 
@@ -16,3 +29,5 @@ app.all('*', (req, res) => {
 });
 
 app.listen(PORT);
+
+export default app;
