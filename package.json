@@ -7,6 +7,8 @@
     "build": "rm -rf bin && mkdir bin && babel -d ./bin ./src",
     "start": "node ./bin",
     "devstart": "nodemon --exec babel-node src",
+    "migrate:test": "export NODE_ENV=test && babel-node src/database/migrations",
+    "migrate:prod": "export NODE_ENV=production && babel-node src/database/migrations",
     "lint": "./node_modules/.bin/eslint ./src",
     "lint:fix": "./node_modules/.bin/eslint ./src --fix || true"
   },
