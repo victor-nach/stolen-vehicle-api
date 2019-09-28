@@ -5,7 +5,7 @@ import routes from './routes';
 import { responseShort, responseErr } from './utils/responseMsg';
 
 const app = express();
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
