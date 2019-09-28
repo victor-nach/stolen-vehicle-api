@@ -1,0 +1,45 @@
+{
+  "name": "vehicle-verification-api",
+  "version": "1.0.0",
+  "description": "stolen vehicle verification api",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf bin && mkdir bin && babel -d ./bin ./src",
+    "start": "node ./bin",
+    "devstart": "nodemon --exec babel-node src",
+    "lint": "./node_modules/.bin/eslint ./src",
+    "lint:fix": "./node_modules/.bin/eslint ./src --fix || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-nach/vehicle-verification-api.git"
+  },
+  "keywords": [
+    "stolen",
+    "vehicle",
+    "chasis"
+  ],
+  "author": "Iheanacho Victor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victor-nach/vehicle-verification-api/issues"
+  },
+  "homepage": "https://github.com/victor-nach/vehicle-verification-api#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.2"
+  }
+}
