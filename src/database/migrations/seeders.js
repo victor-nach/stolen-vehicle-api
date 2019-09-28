@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'test') {
     (1, 'victor', 'frank', 'hande@gmail.com', 09354512332, '1REGL12ZX2R298984', 'nissan', 'blubird', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'),
     (2, 'emma', 'jude', 'jadm@gmail.com', 09134543332, '1FLET12ZX2R293453', 'toyota', 'strema', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'),
     (1, 'johnson', 'sharon', 'adfnsfe@gmail.com', 091353332, '1QLOP12ZX2R293436', 'lexus', 'gx35', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'),
-    (2, 'anna', 'mike', 'asfdink@gmail.com', 0913536332, '1PLDI12ZX2R234534', 'toyota', 'corolla', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'); 
+    (2, 'anna', 'mike', 'asfdink@gmail.com', 0913536332, '1PLDI12ZX2R234534', 'toyota', 'corolla', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at ilasa maja stop in the front of the checker and from there it was towed to the nex spot for futher checking'); 
 `;
 }
 if (process.env.NODE_ENV === 'production') {

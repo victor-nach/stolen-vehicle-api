@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 /**
-   * @static hashPassword
+   * @name hashPassword
    * @description hashes a password
    * @param { string } password
    * @returns hashed password
@@ -13,7 +13,7 @@ dotenv.config();
 export const hashPassword = (password) => bcrypt.hashSync(password, bcrypt.genSaltSync(8));
 
 /**
-   * @static generateToken
+   * @name generateToken
    * @description generates authentication token
    * @param { Object } payload - { id, type, is_admin }
    * @returns { String } token
@@ -21,16 +21,15 @@ export const hashPassword = (password) => bcrypt.hashSync(password, bcrypt.genSa
 export const generateToken = (payload) => jwt.sign(payload, process.env.SECRET, { expiresIn: '2h' });
 
 /**
-   * @static decodeToken
+   * @name decodeToken
    * @description decodes the token and returns the corresponding payload
    * @param { String } token
-   * @returns { Object } payload - { id, type, is_admin }
-   * @memberof Helper
+   * @returns { Object } payload
    */
 export const decodeToken = (token, secret) => jwt.verify(token, secret || process.env.SECRET);
 
 /**
-   * @static comparePassword
+   * @name comparePassword
    * @description compares two passwords
    * @param { String } password
    * @param { String } hashed_password
