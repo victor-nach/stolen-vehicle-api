@@ -22,7 +22,7 @@ const migrate = async () => {
     "ownerLastName" VARCHAR(128) NOT NULL,
     "ownerEmailAddress" VARCHAR(128) NOT NULL,
     "ownerPhoneNumber" VARCHAR(128) NOT NULL,
-    "vehicleChassisNumber" VARCHAR(128) NOT NULL,
+    "vehicleChassisNumber" VARCHAR(128) UNIQUE NOT NULL,
     "model" VARCHAR(128) NOT NULL,
     "make" VARCHAR(128) NOT NULL,
     "year" BIGINT NOT NULL,

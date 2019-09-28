@@ -11,7 +11,7 @@ export const responseErr = (res, status, message) => res.status(status).json({
 });
 
 /**
-  * @param { Object } res
+  * @param { object } res
   * @param { Number } status
   * @param { Object } message
   * @returns respsonse body

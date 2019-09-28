@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'test') {
         ('admin@gmail.com', 'john', 'doe', '${hashPassword('password')}', 'admin', 'web manager'); 
     
     INSERT INTO vehicles ( "userId", "ownerFirstName", "ownerLastName", "ownerEmailAddress", "ownerPhoneNumber", "vehicleChassisNumber", "make", "model", "year", "color", "location", "description")
-    VALUES (1, 'onome', 'chidi', 'gavem@gmail.com', 0912312332, '1GNEK12ZX2R298984', 'toyota', 'avalon', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'),       
+    VALUES (1, 'onome', 'chidi', 'gavem@gmail.com', 0912312332, '1GBEK12ZX2R298984', 'toyota', 'avalon', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'),       
     (1, 'clifford', 'bolu', 'bulo@gmail.com', 0345412332, '1GNEK12ZX2R298984', 'honda', 'accord', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'),
     (1, 'victor', 'frank', 'hande@gmail.com', 09354512332, '1REGL12ZX2R298984', 'nissan', 'blubird', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'),
     (2, 'emma', 'jude', 'jadm@gmail.com', 09134543332, '1FLET12ZX2R293453', 'toyota', 'strema', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at gunpoint in the front of the checker and from there it was towed to the nex spot for futher checking'),
