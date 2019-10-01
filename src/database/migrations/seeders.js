@@ -4,7 +4,8 @@ import { hashPassword } from '../../utils';
 dotenv.config();
 let seedersQuery;
 
-if (process.env.NODE_ENV === 'test') {
+// use the same seeders script for test and production
+if (process.env.NODE_ENV) {
   seedersQuery = `
     INSERT INTO users ( "email", "firstName", "lastName", "hashedPassword", "role", "designation")
       VALUES ('superAdmin@gmail.com', 'clifford', 'chibuike', '${hashPassword('password')}', 'superAdmin', 'police'),       
