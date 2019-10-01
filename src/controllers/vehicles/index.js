@@ -33,6 +33,6 @@ export const createStolenVehicles = async (req, res) => {
     const data = await StolenVehicles.createStolenVehicle(req.body);
     return response(res, 200, data);
   } catch (error) {
-    return responseErr(res, 500, 'Service Temporarily Down, please try again later');
+    return responseErr(res, 500, error.message);
   }
 };
