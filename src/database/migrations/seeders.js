@@ -20,9 +20,6 @@ if (process.env.NODE_ENV) {
     (2, 'anna', 'mike', 'asfdink@gmail.com', 0913536332, '1PLDI12ZX2R234534', 'toyota', 'corolla', 2017, 'blue', 'lagos', 'the car was stolen at 9:30 pm at ilasa maja stop in the front of the checker and from there it was towed to the nex spot for futher checking'); 
 `;
 }
-if (process.env.NODE_ENV === 'production') {
-  seedersQuery = '';
-}
 
 const seeders = seedersQuery;
 export default seeders;
