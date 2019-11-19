@@ -17,7 +17,6 @@ const migrate = async () => {
   DROP TABLE IF EXISTS vehicles CASCADE;
   CREATE TABLE vehicles(
     "id" SERIAL NOT NULL PRIMARY KEY,
-    "userId" VARCHAR(128) NOT NULL,
     "ownerFirstName" VARCHAR(128) NOT NULL,
     "ownerLastName" VARCHAR(128) NOT NULL,
     "ownerEmailAddress" VARCHAR(128) NOT NULL,

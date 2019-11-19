@@ -32,11 +32,11 @@ class StolenVehicles {
 */
   static async createStolenVehicle(data) {
     const {
-      userId, ownerFirstName, ownerLastName, ownerEmailAddress, ownerPhoneNumber,
+      ownerFirstName, ownerLastName, ownerEmailAddress, ownerPhoneNumber,
       vehicleChassisNumber, make, model, year, color, location, description,
     } = data;
     const values = [
-      userId, ownerFirstName, ownerLastName, ownerEmailAddress, ownerPhoneNumber,
+      ownerFirstName, ownerLastName, ownerEmailAddress, ownerPhoneNumber,
       vehicleChassisNumber, make, model, year, color, location, description,
     ];
     const { rows } = await db.query(insertStolenVehicle, values);
